@@ -3,7 +3,7 @@
 Serves a deep learning based melanoma detection model using a REST API endpoint.
 
 ### Local development
-To use this code for local dev, first clone the repo using :
+To use this code for local development, first clone the repo using :
 ```bash
 $ git clone https://github.com/hasibzunair/adversarial-lesions-rest-api-demo.git
 ```
@@ -19,7 +19,7 @@ Now, you're setup!
 ### Usage
 
 To launch the API server run:
-```bash
+```python
 $ python server.py
 ```
 A fastapi app will run on your local machine. See Swagger UI at `http://127.0.0.1:8000/docs` for more info.
@@ -28,7 +28,7 @@ To interact with it, open a new terminal and just send a curl request like this 
 $ curl -X POST -F image=@test.jpg "http://127.0.0.1:8000/api/predict"
 ```
 
-Using the `test.jpg` image, the JSON response result should look like this, with labels and the probability values:
+Using the `test.jpg` image, the JSON response result should look like this, with labels and the probability values for the given image:
 ```json
 {
   "success": true,
@@ -46,7 +46,7 @@ Using the `test.jpg` image, the JSON response result should look like this, with
 ```
 
 Or, submit a request using Python like this:
-```bash
+```python
 $ python request.py
 ```
 The result should look like this:
@@ -62,7 +62,7 @@ $ curl -X POST -F image=@YOUR_IMG_PATH "http://127.0.0.1:8000/api/predict"
 
 ### Relevant materials
 * Training code for the detection model: [https://github.com/hasibzunair/adversarial-lesions](https://github.com/hasibzunair/adversarial-lesions)
-* Web app served via Streamlit: [https://github.com/hasibzunair/melanoma-detection-demo](https://github.com/hasibzunair/melanoma-detection-demo)
+* Deployed streamlit demo application: [https://github.com/hasibzunair/melanoma-detection-demo](https://github.com/hasibzunair/melanoma-detection-demo)
 
 ### License
 MIT
