@@ -1,4 +1,5 @@
 # Melanoma detection API
+#### :red_circle: NOT FOR MEDICAL USE
 Serves a deep learning based melanoma detection model using a REST API endpoint.
 
 ### Local development
@@ -61,8 +62,7 @@ $ curl -X POST -F image=@YOUR_IMG_PATH "http://127.0.0.1:8000/api/predict"
 
 ### Relevant materials
 * Training code for the detection model: [https://github.com/hasibzunair/adversarial-lesions](https://github.com/hasibzunair/adversarial-lesions)
-* Web application demo can be found at [https://aiderm.herokuapp.com/](https://aiderm.herokuapp.com/)
-* Source code for web app demo: [https://github.com/hasibzunair/melanoma-detection-demo](https://github.com/hasibzunair/melanoma-detection-demo)
+* Web app served via Streamlit: [https://github.com/hasibzunair/melanoma-detection-demo](https://github.com/hasibzunair/melanoma-detection-demo)
 
 ### License
 MIT
